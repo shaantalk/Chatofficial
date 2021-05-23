@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Chat App!</title>
+  </head>
+  <body>
+    <div class="row" style="height: 100vh;">
+        <!-- All Users container -->
+        <!-- <div class="col-3" style="padding: 6rem;">
+            <div class="w-100" style="border: 1px solid #ced4da; border-radius: 5px; overflow: auto; height: 82vh;">
+                <ul id='users' class="list-group">
+                    <li class="list-group-item">Santanu</li>
+                    <li class="list-group-item">Nikita</li>
+                    <li class="list-group-item">Mohit</li>
+                    <li class="list-group-item">Srabanti</li>
+                </ul>
+            </div>
+        </div> -->
+        <div class="offset-md-1 col-md-10 col-sm-12 col-xs-12 p-md-5">
+            <div class="row">
+                <div class="col">
+                    <!-- All messages container -->
+                    <div class="row" style="height: 70vh;">
+                        <div class="col p-sm-5 p-4 h-100">
+                            <div id="chat-messages" class="w-100 h-100" style="border: 1px solid #ced4da; border-radius: 5px; overflow: auto;">
+                                <!-- Message form others -->
+                                <!-- <div class="alert alert-dark my-2 ml-2 mr-5" >
+                                    <div class="row">
+                                        <div class="col"><span><strong>Santanu </strong>at 9:12pm</span></div>
+                                    </div>
+                                    <p style="font-size: smaller;">Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                                </div> -->
+                                
+                                <!-- Message form me -->
+                                <!-- <div class="alert alert-success my-2 mr-2 ml-5">
+                                    <div class="row">
+                                        <div class="col"><span><strong>Santanu </strong>at 9:12pm</span></div>
+                                    </div>
+                                    <p style="font-size: smaller;">Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                                </div> -->
+                                
+                                <!-- Message form app -->
+                                <!-- <div class="alert alert-danger my-2 mr-2 ml-2">
+                                    <div class="row">
+                                        <div class="col"><p style="font-size: smaller;"><strong>Info : </strong>Santanu has left the chat at 9:12pm</p></div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Text Input Container -->
+                    <div class="row" style="height: 20vh;">
+                        <div class="col p-sm-5 p-4">
+                            <div class="w-100 h-100">
+                                <form id="chat-form" style="height: 100%;">
+                                    <div class="input-group h-100">
+                                        <input 
+                                          class="form-control"
+                                          type="text"
+                                          id="msg"
+                                          placeholder="Enter your message..."
+                                          required
+                                          autocomplete="off"
+                                          />
+                                        <div class="input-group-append"><button class="input-group-text btn btn-light" id="msgSendBtn">Send</button></div>
+                                      </div>
+                                  </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js" integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src='/socket.io/socket.io.js'></script>
+    <script src='js/main.js'></script>
+  </body>
+</html>
