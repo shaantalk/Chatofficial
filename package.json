@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shaantalk/RealTimeChat.git"
+    "url": "git+https://github.com/shaantalk/Chatofficial"
   },
   "author": "Santanu Panda",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shaantalk/RealTimeChat/issues"
+    "url": "https://github.com/shaantalk/Chatofficial/issues"
   },
-  "homepage": "https://github.com/shaantalk/RealTimeChat#readme",
+  "homepage": "https://chatofficial.herokuapp.com/",
   "dependencies": {
     "express": "^4.17.1",
     "moment": "^2.29.1",
